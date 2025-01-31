@@ -1,0 +1,70 @@
+@import '../../../variables';
+
+.section-loader {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, $primary 0%, $primary-dark 100%);
+  padding: 0px 16px;
+  color: white;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  bottom: 0px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  z-index: 10;
+
+  transition: opacity 1s linear, height 1s step-start, padding 1s step-start;
+
+  &.hide {
+    height: 0px;
+    padding: 0px;
+    opacity: 0;
+    transition-timing-function: linear, step-end;
+  }
+
+  @media screen and (max-width: $mobile) {
+    justify-content: flex-end
+  }
+
+  >.gif {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $mobile) {
+      top: unset;
+      bottom: 160px;
+    }
+  }
+
+  >.text{
+    position: relative;
+    width: fit-content;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 400;
+    margin: 0 0 20px;
+
+    &.bold {
+      font-weight: 800;
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+      text-align: center;
+      left: 0px;
+      top: unset;
+      bottom: 160px;
+      font-size: 32px;
+      line-height: 40px;
+      transform: translateX(0);
+    }
+  }
+}
