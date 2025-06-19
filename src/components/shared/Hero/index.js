@@ -10,6 +10,7 @@ const Hero = ({ children }) => {
                     speed={50}
                     className = "left"
                     repeat={Infinity}
+                    style={{ whiteSpace: 'pre-line' }}
                     {...children}
                 />
             </div>

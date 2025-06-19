@@ -2,20 +2,19 @@
 
 .landing-hero-container {
     position: relative;
-    height: 400px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient($primary-dark, $primary);
 
     .content {
-        width: 1110px;
+        width: 1280px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .left {
-            width: 600px;
             font-size: 52px;
             color: $text-color;
             text-align: center;

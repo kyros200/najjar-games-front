@@ -1,80 +1,54 @@
+import FlexList from '../../../../components/shared/flexList';
 import Section from '../../../../components/shared/Section'
-import Hatch from '../../../../components/shared/Hatch'
-import DropDown from '../../../../components/shared/DropDown'
 import './FutureProjects.scss'
 
-const FutureProjects = ({ title="Title", description, renderBottom, buttonLabel, to, backgroundColor, className, classNameContent, ...rest}) => {
+const FutureProjects = () => {
+    
+    const SubGamesList1 = [
+        {
+            img: 'https://i.imgur.com/F8ShJGz.jpeg',
+            text: 'Regentes',
+        },
+        {
+            img: 'https://i.imgur.com/8MXXAwX.png',
+            text: 'Faça um baralho na hora e derrote o adversário!',
+        },
+        {
+            img: 'https://i.imgur.com/cSrkzGQ.png',
+            text: 'AllyBetray',
+        },
+    ];
+
+    const SubGamesList2 = [
+        {
+            img: 'https://i.imgur.com/1UP38Rw.jpeg',
+            text: 'Burnout',
+        },
+        {
+            img: 'https://i.imgur.com/aiwK4UF.png',
+            text: 'Ovos.',
+        },
+        {
+            img: 'https://i.imgur.com/pLPfkug.jpeg',
+            text: 'Element Gourmet',
+        },
+    ];
+    
     return (
-        <Section
-        backgroundColor='#2B912D'
-        >
-            <div className="futureProjectsContent">
-                <div className="title">
-                    Future Ideas
+        <>
+            <Section backgroundColor='#2B6535' className={"sub-games-section onlyDesktop"}>
+                <div className={"sub-games-title"}>
+                    Jogos que estou desenvolvendo
                 </div>
-                <div className="subTitle">
-                    If I had time to develop everything I want, it would be a dream. This is a list of Projects of what I want to do next. Here is what I think:
+            </Section>
+            <Section backgroundColor='#2B6535' className={"sub-games-section onlyMobile"}>
+                <div className={"sub-games-title"}>
+                    Em desenvolvimento
                 </div>
-                <div className="dropDownContainer">
-                    <DropDown 
-                        title={"Element Gourmet"}
-                        content={
-                            <div>
-                                <div>
-                                    1-4 Board Game about being a Cook Wizard having a Food Truck. Prepare your Menu with the most bizarre and fantastic ingredients and be the most notourious Food Truck at the Fair!
-                                </div>
-                                <br/>
-                                <div>
-                                    Someday it'll be at <Hatch text="HatchGames." />, after Regent, Gaed and 3014.
-                                </div>
-                            </div>
-                        }
-                    />
-                    <DropDown 
-                        title={"Gaed: Black Market"}
-                        content={
-                            <div>
-                                <div>
-                                    Party Game with chaos about trading cards in 3 minutes.
-                                </div>
-                                <br/>
-                                <div>
-                                    Far far away, but I want to visit this project someday
-                                </div>
-                            </div>
-                        }
-                    />
-                    <DropDown 
-                        title={"Waiting for Them"}
-                        content={
-                            <div>
-                                <div>
-                                    Cooperative (?) game about surviving until the civilization reaches the destination. The players control an AI system, each part is a player but they cannot talk directly.
-                                </div>
-                                <br/>
-                                <div>
-                                    Just a concept. Nothing is done for this game. Heavily inspired by the game "Dome Keeper"
-                                </div>
-                            </div>
-                        }
-                    />
-                    <DropDown 
-                        title={"Washing Competition"}
-                        content={
-                            <div>
-                                <div>
-                                    Game about competitive washing machines
-                                </div>
-                                <br/>
-                                <div>
-                                    Tetris with some wild mechanics. I hope I'll make this one, seems fun.
-                                </div>
-                            </div>
-                        }
-                    />
-                </div>
-            </div>
-        </Section>
+            </Section>
+            <FlexList items={SubGamesList1}/>
+            <FlexList items={SubGamesList2}/>
+        </>
     )
 }
 

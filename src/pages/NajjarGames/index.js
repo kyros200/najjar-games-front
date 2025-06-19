@@ -1,68 +1,72 @@
 import Hero from '../../components/shared/Hero'
 import Section from '../../components/shared/Section'
 import Hatch from '../../components/shared/Hatch'
-// import NajjarDoc from '../../components/shared/NajjarDoc'
 import NajjarProjectSection from '../../components/NajjarProjectSection'
 import FutureProjects from './components/FutureProjects'
 import './NajjarProjects.scss'
-// import NajjarDocWhite from '../../components/shared/NajjarDoc/NajjarDocWhite.svg'
 import JLFLogo from './images/logoJLF.png'
 import SGLogo from './images/SG_logo.png'
 import { useEffect } from 'react'
 
 const NajjarGames = () => {
 
-    // const [najjarDocModal, setNajjarDocModal] = useState(false)
-
     useEffect(() => {
         window.scrollTo(0, 0)
+
+        if (!localStorage.getItem("najjar-games-language"))
+            localStorage.setItem("najjar-games-language", navigator.language)
     }, [])
 
-    // const najjarDocData = [
-    //     {
-    //         label:"About",
-    //         endpoint: "/najjarDoc"
-    //     },
-    //     {
-    //         label:"Design",
-    //         endpoint: "/najjarDoc/design"
-    //     },
-    //     {
-    //         label:"Patch Notes",
-    //         endpoint: "/najjarDoc/patchNotes"
-    //     },
-    // ]
-
-    const listTexts = 
+    const HeroTextsList = 
     [
         {
             sequence: [
-                'NajjarGames. is games that I design for fun.',
-                2000,
-                'NajjarGames. is games that I craft with care.',
-                2000,
-                'NajjarGames. is games that I bring to life.',
-                2000,
-                'NajjarGames. is games that I create for you.',
-                2000,
-                'NajjarGames. is games that I play with passion.',
-                2000,
-                'NajjarGames. is games that I imagine daily.',
-                2000,
-                'NajjarGames. is games that I build with love.',
-                2000,
-                'NajjarGames. is games that I share with all.',
-                2000,
-                'NajjarGames. is games that I develop for joy.',
-                2000,
-                'NajjarGames. is games that I test endlessly.',
-                2000,
-                'NajjarGames. is games that I refine constantly.',
-                2000,
-                'NajjarGames. is games that I innovate tirelessly.',
-                2000,
-                'NajjarGames. is games that I enjoy with friends.',
-                2000,
+                "NajjarGames. is where I\ndesign for fun.",
+                400,
+                "NajjarGames. is where I\nbring to life many ideas.",
+                400,
+                "NajjarGames. is where I\nshare with you all.",
+                400,
+                "NajjarGames. is where I\ndevelop for joy.",
+                400,
+                "NajjarGames. is where I\ntest endlessly.",
+                400,
+                "NajjarGames. is where I\nrefine constantly.",
+                400,
+                "NajjarGames. is where I\ninnovate tirelessly.",
+                400,
+                "NajjarGames. is where I\nmake games with players in mind.",
+                400,
+                "NajjarGames. is where I\ndesign from scratch.",
+                400,
+                "NajjarGames. is where I\ntest until they shine.",
+                400,
+                "NajjarGames. is where I\nwish existed when I was a kid.",
+                400,
+                "NajjarGames. is where I\npour my soul into.",
+                400,
+                "NajjarGames. is where I\nbring to your table an experience.",
+                400,
+                "NajjarGames. is where I\nstart with a crazy sketch.",
+                400,
+                "NajjarGames. is where I\ngrow from tiny ideas.",
+                400,
+                "NajjarGames. is where I\nbuild to tell stories.",
+                400,
+                "NajjarGames. is where I\nrefine one rule at a time.",
+                400,
+                "NajjarGames. is where I\ncreate from chaos.",
+                400,
+                "NajjarGames. is where I\nbring people together.",
+                400,
+                "NajjarGames. is where I\nchallenge myself.",
+                400,
+                "NajjarGames. is where I\nplay with passion.",
+                400,
+                "NajjarGames. is where I\nimagine daily.",
+                400,
+                "NajjarGames. is where I\nbuild with love.",
+                400,
             ]
         },
     ]
@@ -70,7 +74,7 @@ const NajjarGames = () => {
     return (
         <>
             <Hero>
-                {listTexts[Math.floor(Math.random() * listTexts.length)]}
+                {HeroTextsList[Math.floor(Math.random() * HeroTextsList.length)]}
             </Hero>
             <Section
             backgroundColor='#eeffee'
@@ -114,11 +118,6 @@ const NajjarGames = () => {
                 />
             </Section>
             <FutureProjects />
-            {/* <NajjarDoc 
-                open={najjarDocModal}
-                onClose={() => setNajjarDocModal(false)}
-                data={najjarDocData}
-            /> */}
         </>
     )
 }

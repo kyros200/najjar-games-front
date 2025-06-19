@@ -22,3 +22,16 @@
         font-weight: bold;
     }
 }
+
+.sub-games-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 38px;
+    color: white;
+    text-align: center;
+    font-family: 'Righteous';
+    
+    @media screen and (max-width: $mobile) {
+        width: 100vw;
+    }
+}
