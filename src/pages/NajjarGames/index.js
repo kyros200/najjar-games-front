@@ -6,12 +6,16 @@ import './NajjarGames.scss'
 import JLFLogo from './images/logoJLF.png'
 import { useEffect } from 'react'
 import Instagram from './images/instagramIconWhite.svg'
+import Document from './images/documentIcon.svg'
+import Video from './images/videoIcon.svg'
 
 import texts from '../../helper/texts'
 import FlexList from '../../components/shared/flexList'
 import Section from '../../components/shared/Section'
 
 const NajjarGames = () => {
+
+    const localLanguage = localStorage.getItem("najjar-games-language")
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -24,14 +28,36 @@ const NajjarGames = () => {
         {
             img: 'https://i.imgur.com/Adj1t1T.png',
             text: 'Summa Gemma',
+            buttons: [
+                {
+                    icon: <img src={Document} alt="SellSheet"/>,
+                    description: 'SellSheet',
+                    to:"https://drive.google.com/file/d/1U_m50WzSYhWqeGSg4dBCQDWqF_po_pnd/view?usp=sharing",
+                },
+                {
+                    icon: <img src={Video} alt="Short Video"/>,
+                    description: 'Short Video',
+                    to:"https://drive.google.com/file/d/1hAm1Afg5sC1d6iepOjkKSmxAzbGvewnN/view?usp=sharing",
+                },
+                {
+                    icon: <img src={Video} alt="Long Video"/>,
+                    description: 'Long Video',
+                    to:"https://drive.google.com/file/d/1vokphgMlx2ZvvJZsJAVWh8gqFCZg8EFC/view?usp=sharing",
+                },
+            ]
         },
         {
             img: 'https://i.imgur.com/OBxxZ71.png',
-            text: '3014',
+            text: texts["3014"][localLanguage],
+            buttons: [
+                {
+                    icon: <img src={Document} alt="SellSheet"/>,
+                    description: 'SellSheet',
+                    to:"https://drive.google.com/file/d/1efyYW3ypnMXijJ6ZaBMkkXLOXO3IFGQd/view?usp=sharing"
+                },
+            ]
         },
     ];
-
-    const localLanguage = localStorage.getItem("najjar-games-language")
 
     return (
         <>

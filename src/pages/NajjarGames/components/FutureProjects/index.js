@@ -10,11 +10,11 @@ const FutureProjects = () => {
     const SubGamesList1 = [
         {
             img: 'https://i.imgur.com/F8ShJGz.jpeg',
-            text: 'Regentes',
+            text: texts.regentes[localLanguage],
         },
         {
             img: 'https://i.imgur.com/8MXXAwX.png',
-            text: 'Faça um baralho na hora e derrote o adversário!',
+            text: texts.gaed[localLanguage],
         },
         {
             img: 'https://i.imgur.com/cSrkzGQ.png',
@@ -29,7 +29,7 @@ const FutureProjects = () => {
         },
         {
             img: 'https://i.imgur.com/aiwK4UF.png',
-            text: 'Ovos.',
+            text: texts.ovos[localLanguage],
         },
         {
             img: 'https://i.imgur.com/pLPfkug.jpeg',

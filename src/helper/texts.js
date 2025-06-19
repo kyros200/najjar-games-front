@@ -157,6 +157,22 @@ const texts = {
         "pt-BR": "Procurando editoras",
         "en": "Looking for Publishers"
     },
+    "3014": {
+        "pt-BR": "3014: Projeto Último Suspiro",
+        "en": "3014: Project Last Whisper"
+    },
+    ovos: {
+        "pt-BR": "Ovos.",
+        "en": "Eggs."
+    },
+    regentes: {
+        "pt-BR": "Regentes",
+        "en": "Regents"
+    },
+    gaed: {
+        "pt-BR": "Batalhas por Ga'ed",
+        "en": "Ga'ed: Duel"
+    },
 }
 
 export default texts
