@@ -1,5 +1,9 @@
 @import '../../variables';
 
+.sub-games-section {
+    user-select: none;
+}
+
 .jlf {
     background-image: url('./images/estampaJLFInfinita.png');
 
