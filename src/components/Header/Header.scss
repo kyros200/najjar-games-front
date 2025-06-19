@@ -36,6 +36,12 @@
                 text-decoration: none;
                 color: $text-color;
             }
+            @media screen and (max-width: $mobile) {
+                button {
+                    padding: 4px;
+                    width: 90px;
+                }
+            }
         }
     }
 }

@@ -3,8 +3,12 @@
 .landing-header {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: 635px;
     overflow: hidden;
+
+    @media screen and (max-width: $mobile) {
+      height: 400px;
+    }
   }
   
   .header-item {

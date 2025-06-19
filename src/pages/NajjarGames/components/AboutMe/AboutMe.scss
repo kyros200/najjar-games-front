@@ -1,4 +1,4 @@
-@import '../../../variables';
+@import '../../../../variables.scss';
 
 .aboutMeContent {
     display: flex;
@@ -13,11 +13,9 @@
         justify-content: center;
         align-items: center;
 
-        // padding-left: 200px;
-
         @media screen and (max-width: $mobile) {
             padding-left: 0px;
-            padding: 20px 0px
+            padding-top: 20px;
         }
 
         >.image {
@@ -41,14 +39,44 @@
             padding: 0px 20px 12px;
         }
 
-        .aboutMeTitle {
-            font-size: 40px;
-            font-weight: 800;
-            margin-top: 16px;
-            margin-bottom: 16px;
-        
+        .titleContent {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
             @media screen and (max-width: $mobile) {
-                margin-bottom: 6px;
+                flex-direction: column;
+                padding-bottom: 8px;
+            }
+
+            .aboutMeTitle {
+                font-size: 40px;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                font-family: "Righteous";
+            
+                @media screen and (max-width: $mobile) {
+                    font-size: 36px;
+                    margin-bottom: 6px;
+                }
+            }
+
+            .channels {
+                display: flex;
+                justify-content: space-around;
+    
+                > a {
+                    width: 48px;
+    
+                    @media screen and (max-width: $mobile) {
+                        width: 36px;
+                    }
+    
+                    > img {
+                        width: 100%;
+                    }
+                }
             }
         }
 
@@ -56,22 +84,5 @@
             margin-top: 0;
         }
 
-        >.channels {
-            display: flex;
-            justify-content: space-around;
-            padding-bottom: 24px;
-
-            > a {
-                width: 48px;
-
-                @media screen and (max-width: $mobile) {
-                    width: 36px;
-                }
-
-                > img {
-                    width: 100%;
-                }
-            }
-        }
     }
 }

@@ -3,6 +3,8 @@ import './Header.scss'
 import Button from '../shared/Button'
 import { useState } from 'react'
 
+import texts from '../../helper/texts.js'
+
 const Header = () => {
 
     let [localLanguage, setLocalLanguage] = useState(localStorage.getItem("najjar-games-language"))
@@ -26,7 +28,7 @@ const Header = () => {
                 </Link>
                 <div className='buttons'>
                     <Button onClick={() => changeLanguage()}>
-                        {localLanguage === "pt-BR" ? "Change to English" : "Mudar para Português"}
+                        {texts.changeLanguage[localLanguage]}
                     </Button>
                 </div>
             </div>

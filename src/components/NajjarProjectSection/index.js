@@ -1,14 +1,14 @@
 import Button from '../shared/Button'
 import './NajjarProjectSection.scss'
 
-const NajjarProjectSection = ({ title="Title", description, renderBottom, buttonLabel, to, backgroundColor, className, classNameContent, ...rest}) => {
+const NajjarProjectSection = ({ children, title="Title", description, renderBottom, buttonLabel, to, backgroundColor, className, classNameContent, classNameRight, classNameLeft, ...rest}) => {
     return (
         <div className={`najjarProjectSection ${className}`} {...rest}>
             <div className={`najjarProjectSectionContent ${classNameContent}`}>
-                <div className="left">
+                <div className={`left ${classNameLeft}`}>
                     {title}
                 </div>
-                <div className="right">
+                <div className={`right ${classNameRight}`}>
                     <div className='text'>
                         {description}
                     </div>
@@ -21,6 +21,7 @@ const NajjarProjectSection = ({ title="Title", description, renderBottom, button
                         {buttonLabel}
                     </Button>
                     :<></>}
+                    {children}
                 </div>
             </div>
         </div>
