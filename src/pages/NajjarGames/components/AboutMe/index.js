@@ -9,7 +9,7 @@ import texts from '../../../../helper/texts.js'
 
 const AboutMe = () => {
 
-    let localLanguage = localStorage.getItem("najjar-games-language")
+    const localLanguage = localStorage.getItem("najjar-games-language")
 
     return (
         <Section backgroundColor='#eeffee' >
@@ -26,10 +26,10 @@ const AboutMe = () => {
                         </div>
                         <div className="channels">
                             <a href="https://www.instagram.com/najjargames/" target="_blank" rel="noreferrer" >
-                                <img src={Instagram} alt="Github" />
+                                <img src={Instagram} alt="Instagram NajjarGames." />
                             </a>
                             <a style={{paddingLeft: "12px"}} href="mailto:rafaelnajjar@gmail.com" target="_blank" rel="noreferrer" >
-                                <img src={Gmail} alt="Gmail" />
+                                <img src={Gmail} alt="email pessoal Rafael Najjar" />
                             </a>
                         </div>
                     </div>

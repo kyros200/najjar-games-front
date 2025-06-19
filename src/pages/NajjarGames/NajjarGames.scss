@@ -1,23 +1,5 @@
 @import '../../variables';
 
-.najjarPrototype {
-    @media screen and (max-width: $mobile) {
-        >.najjarProjectSectionContent {
-            >.left {
-                font-size: 34px;
-            }
-        }
-    }
-}
-
-.najjarDoc {
-    .najjarDocButton {
-        cursor: pointer;
-        margin-top: 15px;
-        margin-bottom: 20px;
-    }
-}
-
 .jlf {
     background-image: url('./images/estampaJLFInfinita.png');
 
@@ -90,5 +72,14 @@
                 }
             }
         }
+    }
+}
+
+.instagramIcon {
+    height: 60px;
+    padding-top: 12px;
+
+    @media screen and (max-width: $mobile) {
+        padding: 0;
     }
 }

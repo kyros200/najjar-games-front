@@ -129,6 +129,34 @@ const texts = {
         "pt-BR": "Sobre NajjarGames.",
         "en": "About NajjarGames."
     },
+    jlfDescription:{
+        "pt-BR": (<span>Jogos Legais Findessemanais. É o meu evento que faço onde levo minha coleção de jogos — e aproveito para fazer playtests! Acontece mensalmente no Rio de Janeiro.</span>),
+        "en": (<span>My event with friends to play my collection of board games — and also playtest my own designs! It happens monthly in Rio de Janeiro.</span>)
+    },
+    futureProjectsDesktop: {
+        "pt-BR": "Jogos que estou desenvolvendo",
+        "en": "Games that I'm developing"
+    },
+    futureProjectsMobile: {
+        "pt-BR": "Em desenvolvimento",
+        "en": "In development"
+    },
+    otherThingsDesktop: {
+        "pt-BR": "Outras Coisas",
+        "en": "Other Things"
+    },
+    otherThingsMobile: {
+        "pt-BR": "Outras Coisas",
+        "en": "Other Things"
+    },
+    mainGamesDesktop: {
+        "pt-BR": "Procurando editoras",
+        "en": "Looking for Publishers"
+    },
+    mainGamesMobile: {
+        "pt-BR": "Procurando editoras",
+        "en": "Looking for Publishers"
+    },
 }
 
 export default texts

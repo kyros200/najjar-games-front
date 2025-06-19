@@ -1,8 +1,11 @@
 import FlexList from '../../../../components/shared/flexList';
 import Section from '../../../../components/shared/Section'
 import './FutureProjects.scss'
+import texts from '../../../../helper/texts.js'
 
 const FutureProjects = () => {
+
+    const localLanguage = localStorage.getItem("najjar-games-language")
     
     const SubGamesList1 = [
         {
@@ -38,12 +41,12 @@ const FutureProjects = () => {
         <>
             <Section backgroundColor='#2B6535' className={"sub-games-section onlyDesktop"}>
                 <div className={"sub-games-title"}>
-                    Jogos que estou desenvolvendo
+                    {texts.futureProjectsDesktop[localLanguage]}
                 </div>
             </Section>
             <Section backgroundColor='#2B6535' className={"sub-games-section onlyMobile"}>
                 <div className={"sub-games-title"}>
-                    Em desenvolvimento
+                    {texts.futureProjectsMobile[localLanguage]}
                 </div>
             </Section>
             <FlexList items={SubGamesList1}/>

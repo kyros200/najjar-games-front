@@ -4,10 +4,12 @@ import FutureProjects from './components/FutureProjects'
 import AboutMe from './components/AboutMe'
 import './NajjarGames.scss'
 import JLFLogo from './images/logoJLF.png'
-import SGLogo from './images/SG_logo.png'
 import { useEffect } from 'react'
+import Instagram from './images/instagramIconWhite.svg'
 
 import texts from '../../helper/texts'
+import FlexList from '../../components/shared/flexList'
+import Section from '../../components/shared/Section'
 
 const NajjarGames = () => {
 
@@ -18,31 +20,57 @@ const NajjarGames = () => {
             localStorage.setItem("najjar-games-language", navigator.language)
     }, [])
 
-    let localLanguage = localStorage.getItem("najjar-games-language")
+    const MainGamesList = [
+        {
+            img: 'https://i.imgur.com/Adj1t1T.png',
+            text: 'Summa Gemma',
+        },
+        {
+            img: 'https://i.imgur.com/OBxxZ71.png',
+            text: '3014',
+        },
+    ];
+
+    const localLanguage = localStorage.getItem("najjar-games-language")
 
     return (
         <>
             <Hero>
                 {texts.heroTextsList[localLanguage]}
             </Hero>
-            <NajjarProjectSection
-                title={<img src={SGLogo} alt="Summa Gemma" height={"300px"}/>}
-                description={<span>Ad Perfectum. Summa Gemma is a game about refining gems until you make the perfect one.</span>}
-                buttonLabel={<span>Play it now on Tabletopia!</span>}
-                to="https://tabletopia.com/games/summa-gemma-wa69s1/play-now"
-                className="sg"
-                classNameRight="sgContent"
-            />
+            <AboutMe />
+            <Section backgroundColor='#2B6535' className={"sub-games-section onlyDesktop"}>
+                <div className={"sub-games-title"}>
+                    {texts.mainGamesDesktop[localLanguage]}
+                </div>
+            </Section>
+            <Section backgroundColor='#2B6535' className={"sub-games-section onlyMobile"}>
+                <div className={"sub-games-title"}>
+                    {texts.mainGamesMobile[localLanguage]}
+                </div>
+            </Section>
+            <FlexList items={MainGamesList} />
+            <FutureProjects />
+            <Section backgroundColor='#2B6535' className={"sub-games-section onlyDesktop"}>
+                <div className={"sub-games-title"}>
+                    {texts.otherThingsDesktop[localLanguage]}
+                </div>
+            </Section>
+            <Section backgroundColor='#2B6535' className={"sub-games-section onlyMobile"}>
+                <div className={"sub-games-title"}>
+                    {texts.otherThingsMobile[localLanguage]}
+                </div>
+            </Section>
             <NajjarProjectSection
                 title={<img src={JLFLogo} alt="JLF" height={"300px"}/>}
-                description={<span>My Monthly event with friends to play boardgames (in Rio de Janeiro)!</span>}
-                buttonLabel={<span>(pt-br) Check JLF Instagram!</span>}
-                to={'https://www.instagram.com/jlf.boardgame/'}
+                description={texts.jlfDescription[localLanguage]}
                 className="jlf"
                 classNameRight="jlfContent"
-            />
-            <FutureProjects />
-            <AboutMe></AboutMe>
+            >
+                <a href="https://www.instagram.com/najjargames/" target="_blank" rel="noreferrer" >
+                    <img className='instagramIcon' src={Instagram} alt="Instagram NajjarGames." />
+                </a>
+            </NajjarProjectSection>
         </>
     )
 }
