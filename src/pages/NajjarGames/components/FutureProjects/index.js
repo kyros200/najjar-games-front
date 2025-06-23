@@ -5,7 +5,7 @@ import texts from '../../../../helper/texts.js'
 
 const FutureProjects = () => {
 
-    const localLanguage = localStorage.getItem("najjar-games-language")
+    const localLanguage = localStorage.getItem("najjar-games-language") || (navigator.language === "pt-BR" ? "pt-BR" : "en")
     
     const SubGamesList1 = [
         {

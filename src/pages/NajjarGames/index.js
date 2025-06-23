@@ -15,13 +15,13 @@ import Section from '../../components/shared/Section'
 
 const NajjarGames = () => {
 
-    const localLanguage = localStorage.getItem("najjar-games-language")
+    const localLanguage = localStorage.getItem("najjar-games-language") || (navigator.language === "pt-BR" ? "pt-BR" : "en")
 
     useEffect(() => {
         window.scrollTo(0, 0)
 
         if (!localStorage.getItem("najjar-games-language"))
-            localStorage.setItem("najjar-games-language", navigator.language)
+            localStorage.setItem("najjar-games-language", (navigator.language === "pt-BR" ? "pt-BR" : "en"))
     }, [])
 
     const MainGamesList = [

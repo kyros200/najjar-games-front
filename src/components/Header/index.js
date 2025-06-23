@@ -7,14 +7,13 @@ import texts from '../../helper/texts.js'
 
 const Header = () => {
 
-    let [localLanguage, setLocalLanguage] = useState(localStorage.getItem("najjar-games-language"))
+    let [localLanguage, setLocalLanguage] = useState(localStorage.getItem("najjar-games-language") || (navigator.language === "pt-BR" ? "pt-BR" : "en"))
 
     let changeLanguage = () => {
         if (localStorage.getItem("najjar-games-language") === "pt-BR"){
             localStorage.setItem("najjar-games-language", "en")
         } else {
             localStorage.setItem("najjar-games-language", "pt-BR")
-
         }
         setLocalLanguage(localStorage.getItem("najjar-games-language"))
         window.location.reload()

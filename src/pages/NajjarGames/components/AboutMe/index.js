@@ -9,7 +9,7 @@ import texts from '../../../../helper/texts.js'
 
 const AboutMe = () => {
 
-    const localLanguage = localStorage.getItem("najjar-games-language")
+    const localLanguage = localStorage.getItem("najjar-games-language") || (navigator.language === "pt-BR" ? "pt-BR" : "en")
 
     return (
         <Section backgroundColor='#eeffee' >
