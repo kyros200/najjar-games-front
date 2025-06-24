@@ -2,6 +2,7 @@ import Section from '../../../../components/shared/Section'
 
 import Gmail from './images/gmail.svg'
 import Instagram from './images/instagram.svg'
+import Whatsapp from './images/whatsapp.svg'
 
 import './AboutMe.scss';
 
@@ -16,7 +17,7 @@ const AboutMe = () => {
             <div className='aboutMeContent'>
                 <div className="left">
                     <div className="image">
-                        <img src="https://github.com/kyros200.png" alt="Rafael Najjar Github profile"/>
+                        <img src="https://github.com/kyros200.png" alt="Rafael Najjar"/>
                     </div>
                 </div>
                 <div className="right">
@@ -25,7 +26,10 @@ const AboutMe = () => {
                             {texts.aboutNajjarGames[localLanguage]}
                         </div>
                         <div className="channels">
-                            <a href="https://www.instagram.com/najjargames/" target="_blank" rel="noreferrer" >
+                            <a href="https://chat.whatsapp.com/BQfUc1fpTJp1KF9vVocZ3l" target="_blank" rel="noreferrer" >
+                                <img src={Whatsapp} alt="Grupo Whatsapp NajjarGames." />
+                            </a>
+                            <a style={{paddingLeft: "12px"}} href="https://www.instagram.com/najjargames/" target="_blank" rel="noreferrer" >
                                 <img src={Instagram} alt="Instagram NajjarGames." />
                             </a>
                             <a style={{paddingLeft: "12px"}} href="mailto:rafaelnajjar@gmail.com" target="_blank" rel="noreferrer" >
