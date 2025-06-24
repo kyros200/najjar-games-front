@@ -7,6 +7,7 @@ import JLFLogo from './images/logoJLF.png'
 import { useEffect } from 'react'
 import Instagram from './images/instagramIconWhite.svg'
 import Document from './images/documentIcon.svg'
+import Tabletopia from './images/Tabletopia-Logo.png'
 import Video from './images/videoIcon.svg'
 
 import texts from '../../helper/texts'
@@ -31,18 +32,18 @@ const NajjarGames = () => {
             buttons: [
                 {
                     icon: <img src={Document} alt="SellSheet" style={{width: "70px"}}/>,
-                    description: 'SellSheet (pt)',
-                    to:"https://drive.google.com/file/d/1U_m50WzSYhWqeGSg4dBCQDWqF_po_pnd/view?usp=sharing",
+                    description: 'SellSheets',
+                    to:"https://drive.google.com/drive/folders/11Sk0rVgOq0RBjhssYfx4Me7vuXVu6L1j?usp=sharing",
                 },
                 {
                     icon: <img src={Video} alt="Short Video" style={{width: "70px"}}/>,
-                    description: 'Short Video (en)',
-                    to:"https://drive.google.com/file/d/1hAm1Afg5sC1d6iepOjkKSmxAzbGvewnN/view?usp=sharing",
+                    description: texts.videos[localLanguage],
+                    to:"https://drive.google.com/drive/folders/1Nhe0dQfPzvon0e4hVK-xseZKNTwb0pfM?usp=sharing",
                 },
                 {
-                    icon: <img src={Video} alt="Long Video" style={{width: "70px"}}/>,
-                    description: 'Long Video (pt)',
-                    to:"https://drive.google.com/file/d/1vokphgMlx2ZvvJZsJAVWh8gqFCZg8EFC/view?usp=sharing",
+                    icon: <img src={Tabletopia} alt="Play Now!" style={{width: "70px"}}/>,
+                    description: texts.playNow[localLanguage],
+                    to:"https://tabletopia.com/games/summa-gemma-wa69s1/play-now",
                 },
             ]
         },
@@ -51,9 +52,9 @@ const NajjarGames = () => {
             text: texts["3014"][localLanguage],
             buttons: [
                 {
-                    icon: <img src={Document} alt="SellSheet"/>,
-                    description: 'SellSheet',
-                    to:"https://drive.google.com/file/d/1efyYW3ypnMXijJ6ZaBMkkXLOXO3IFGQd/view?usp=sharing"
+                    icon: <img src={Document} alt="SellSheet" style={{width: "70px"}}/>,
+                    description: 'SellSheets',
+                    to:"https://drive.google.com/drive/folders/1623C1iWOlyCnQoVsF_m2OQrSneSYVjkH?usp=sharing"
                 },
             ]
         },

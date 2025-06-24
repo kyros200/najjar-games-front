@@ -52,7 +52,7 @@ const texts = {
         },
         "pt-BR": {
             "sequence": [
-                "NajjarGames. é onde eu\nfaço por diversão.",
+                "NajjarGames. é onde eu\nfaço jogos por diversão.",
                 1000,
                 "NajjarGames. é onde eu\ndou vida a muitas ideias.",
                 1000,
@@ -72,8 +72,8 @@ const texts = {
                 1000,
                 "NajjarGames. é onde eu\ntesto até brilhar.",
                 1000,
-                "NajjarGames. é onde eu\nqueria que existisse quando criança.",
-                1000,
+                // "NajjarGames. é onde eu\nqueria que existisse quando criança.",
+                // 1000,
                 "NajjarGames. é onde eu\ndeposito minha alma.",
                 1000,
                 "NajjarGames. é onde eu\ntrago uma experiência para sua mesa.",
@@ -94,8 +94,8 @@ const texts = {
                 1000,
                 "NajjarGames. é onde eu\njogo com paixão.",
                 1000,
-                "NajjarGames. é onde eu\nme imagino todos os dias.",
-                1000,
+                // "NajjarGames. é onde eu\nme imagino todos os dias.",
+                // 1000,
                 "NajjarGames. é onde eu\ncrio jogos com amor.",
                 1000
             ]
@@ -172,6 +172,14 @@ const texts = {
     gaed: {
         "pt-BR": "Batalhas por Ga'ed",
         "en": "Ga'ed: Duel"
+    },
+    playNow: {
+        "pt-BR": "Jogue Agora!",
+        "en": "Play Now!"
+    },
+    videos: {
+        "pt-BR": "Vídeos",
+        "en": "Videos"
     },
 }
 

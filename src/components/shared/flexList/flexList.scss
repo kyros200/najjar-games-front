@@ -17,7 +17,7 @@
   transition: flex 1.0s ease;
   overflow: hidden;
   
-  img {
+  >img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -47,8 +47,8 @@
   .overlay-buttons-container {
     position: absolute;
     bottom: 50%;
-    left: 10%;
-    right: 10%;
+    left: 30%;
+    right: 30%;
     color: white;
     font-size: 2rem;
     font-family: "Righteous";
@@ -62,6 +62,9 @@
   
     @media screen and (max-width: $mobile) {
         font-size: 16px;
+        bottom: 40%;
+        left: 10%;
+        right: 10%;
   
         button {
           padding: 2px;
@@ -76,9 +79,9 @@
       align-items: center;
       user-select: none;
 
-      // @media screen and (max-width: $mobile) {
-      //   padding: 2px;
-      // }
+      @media screen and (max-width: $mobile) {
+        width: 70px;
+      }
     }
   } 
 }
@@ -104,5 +107,6 @@
 }
 
 .overlay-buttons-container:has(> :only-child) {
+  display: flex;
   justify-content: center;
 }
