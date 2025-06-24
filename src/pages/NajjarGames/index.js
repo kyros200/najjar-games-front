@@ -30,18 +30,18 @@ const NajjarGames = () => {
             text: 'Summa Gemma',
             buttons: [
                 {
-                    icon: <img src={Document} alt="SellSheet"/>,
-                    description: 'SellSheet',
+                    icon: <img src={Document} alt="SellSheet" style={{width: "70px"}}/>,
+                    description: 'SellSheet (pt)',
                     to:"https://drive.google.com/file/d/1U_m50WzSYhWqeGSg4dBCQDWqF_po_pnd/view?usp=sharing",
                 },
                 {
-                    icon: <img src={Video} alt="Short Video"/>,
-                    description: 'Short Video',
+                    icon: <img src={Video} alt="Short Video" style={{width: "70px"}}/>,
+                    description: 'Short Video (en)',
                     to:"https://drive.google.com/file/d/1hAm1Afg5sC1d6iepOjkKSmxAzbGvewnN/view?usp=sharing",
                 },
                 {
-                    icon: <img src={Video} alt="Long Video"/>,
-                    description: 'Long Video',
+                    icon: <img src={Video} alt="Long Video" style={{width: "70px"}}/>,
+                    description: 'Long Video (pt)',
                     to:"https://drive.google.com/file/d/1vokphgMlx2ZvvJZsJAVWh8gqFCZg8EFC/view?usp=sharing",
                 },
             ]
@@ -93,7 +93,7 @@ const NajjarGames = () => {
                 className="jlf"
                 classNameRight="jlfContent"
             >
-                <a href="https://www.instagram.com/najjargames/" target="_blank" rel="noreferrer" >
+                <a href="https://www.instagram.com/jlf.boardgame/" target="_blank" rel="noreferrer" >
                     <img className='instagramIcon' src={Instagram} alt="Instagram NajjarGames." />
                 </a>
             </NajjarProjectSection>
